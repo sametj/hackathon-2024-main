@@ -1,0 +1,55 @@
+:root.dark-mode {
+  // COLORS
+
+  --pr1: #94bc6c;
+  --pr2: #7ba650;
+
+  --color-grey-0: #000000;
+  --color-grey-50: #111827;
+  --color-grey-100: #1f2937;
+  --color-grey-200: #374151;
+  --color-grey-300: #4b5563;
+  --color-grey-400: #6b7280;
+  --color-grey-500: #9ca3af;
+  --color-grey-600: #d1d5db;
+  --color-grey-700: #e5e7eb;
+  --color-grey-800: #f3f4f6;
+  --color-grey-900: #f9fafb;
+  --color-grey-1000: #fff;
+
+  --gradient-1: #000;
+  --gradient-2: #001213;
+
+  // TEXT
+
+  --text: #ffffff;
+  --text-light: #f3f9f9;
+  --font-weight: 400;
+  --color-label: #e1e9e8;
+  --color-input-text: #f3f9f9;
+  --color-nav: rgba(33, 158, 188);
+  --gradient-text: linear-gradient(90deg, #219ebc 0%, #99a6f2 100%);
+
+  // BUTTON
+
+  --pr-btn: linear-gradient(90deg, #94bc6c 0%, #7ba650 100%);
+  --bg-button: linear-gradient(90deg, #219ebc 0%, #99a6f2 100%);
+  --bg-switch: linear-gradient(90deg, #001516 0%, #023047 100%);
+
+  // HOVER
+
+  --nav-button-hover: #6b728030;
+
+  // SHADOW
+
+  --shadow-card: 0px 2px 20px 0px rgba(0, 0, 0, 0.05);
+  --shadow-question: 0px 2px 20px 0px rgba(255, 255, 255, 0.1);
+
+  //BACKGROUND
+  --calendar-item-bg: linear-gradient(225deg, #073133 0%, #051f20 100%);
+  --input-bg: linear-gradient(
+    90deg,
+    rgba(0, 165, 167, 0.08) 0%,
+    rgba(0, 221, 223, 0.08) 100%
+  );
+}

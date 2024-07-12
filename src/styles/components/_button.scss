@@ -1,0 +1,46 @@
+.button-link {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: var(--text);
+  font-size: var(--p-size-md);
+  line-height: normal;
+  font-weight: var(--font-weight);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--pr1);
+  }
+
+  @include respond(tablet) {
+    margin: var(--margin-md) var(--margin-sm);
+  }
+  &-tooltip {
+    @extend .button-link;
+    transition: all 0.2s;
+    padding: 16px;
+    border-radius: 50%;
+
+    @include respond(tablet) {
+      padding: 0;
+      margin: 0;
+    }
+
+    &:hover {
+      background-color: var(--nav-button-hover);
+
+      @include respond(tablet) {
+        background-color: transparent;
+        color: var(--text);
+      }
+    }
+  }
+}
+
+.active {
+  color: var(--pr1);
+}

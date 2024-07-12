@@ -1,0 +1,94 @@
+@import "@root/styles/abstracts/mixins";
+
+.calendar-item-container {
+  background: var(--calendar-item-bg);
+  padding: var(--padding-hg);
+  box-shadow: var(--shadow-card);
+
+  font-size: var(--p-size-md);
+  max-width: 50rem;
+
+  color: var(--text-light);
+  width: 100%;
+  text-align: left;
+  border-radius: 2rem;
+
+  &-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &-date {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--p-size-sm);
+    span {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+  }
+  &-text {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.calendar-button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: var(--text);
+  font-size: var(--p-size-md);
+  line-height: normal;
+  font-weight: var(--font-weight);
+  user-select: none;
+  cursor: pointer;
+  display: none;
+
+  @include respond(tablet) {
+    display: block;
+  }
+}
+
+.content {
+  font-size: var(--p-size-xsm);
+  @include respond(tablet) {
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: all 0.4s ease;
+  }
+}
+.content-is-open {
+  margin-top: 2rem;
+  max-height: 70rem;
+  opacity: 1;
+  visibility: visible;
+}
+
+.calendar-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  margin-top: 3rem;
+
+  @include respond(tablet) {
+    margin-top: 0;
+    grid-template-columns: 1fr;
+  }
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: rgb(216, 216, 216);
+
+  margin-block: 2rem;
+}
+
+.bold {
+  font-weight: 600;
+}

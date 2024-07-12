@@ -1,0 +1,58 @@
+.board-game-item-container {
+  background: var(--calendar-item-bg);
+  padding: var(--padding-hg);
+  box-shadow: var(--shadow-card);
+
+  font-size: var(--p-size-md);
+
+  width: clamp(30rem, 50vw, 50rem);
+  color: var(--text-light);
+
+  text-align: left;
+  border-radius: 2rem;
+
+  text-align: center;
+}
+
+.board-games-container {
+  display: flex;
+  gap: 1.8rem;
+  flex-direction: column;
+}
+.search-input {
+  font-size: var(--p-size-sm);
+  font-family: "Work Sans", sans-serif;
+  letter-spacing: 1px;
+  color: var(--color-input-text);
+  background: var(--calendar-item-bg);
+  outline: none;
+  border: 1px solid rgb(228, 228, 228);
+  border-radius: 14px;
+  padding: 12px 20px;
+  width: 100%;
+
+  &::placeholder {
+    font-size: var(--p-size-md);
+    color: var(--color-grey-900);
+  }
+
+  &:focus {
+    border: 1px solid rgb(194, 194, 194);
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 2rem;
+  font-size: var(--p-size-md);
+
+  button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--text-light);
+  }
+}

@@ -1,0 +1,62 @@
+:root.light-mode {
+  // COLORS
+
+  --pr1: #94bc6c;
+  --pr2: #7ba650;
+
+  --color-grey-0: #fff;
+  --color-grey-50: #f9fafb;
+  --color-grey-100: #f3f4f6;
+  --color-grey-200: #e5e7eb;
+  --color-grey-300: #d1d5db;
+  --color-grey-400: #9ca3af;
+  --color-grey-500: #6b7280;
+  --color-grey-600: #4b5563;
+  --color-grey-700: #374151;
+  --color-grey-800: #1f2937;
+  --color-grey-900: #111827;
+  --color-grey-1000: #000;
+
+  --gradient-1: #fffdfc;
+  --gradient-2: #fcf5f0;
+
+  // TEXT
+
+  --text: #202020;
+  --text-light: #023047;
+  --font-weight: 500;
+
+  --color-label: #6b7a7b;
+  --color-input-text: #023047;
+  --color-nav: #7ba650;
+  --gradient-text: linear-gradient(90deg, #7ba650 0%, #94bc6c 100%);
+
+  // BUTTONS
+
+  --pr-btn: linear-gradient(90deg, #94bc6c 0%, #7ba650 100%);
+  --bg-button: rgba(255, 255, 255, 1);
+  --bg-switch: linear-gradient(270deg, #e7fbfc 0%, #8ecae6 100%);
+
+  // HOVER
+
+  --nav-button-hover: #6b728020;
+
+  // SHADOW
+
+  --shadow-card: 0px 2px 20px 0px rgba(0, 0, 0, 0.05);
+  --shadow-question: 0px 2px 10px 0px rgba(0, 0, 0, 0.05);
+
+  // BACKGROUND
+
+  --calendar-item-bg: linear-gradient(
+    180deg,
+    #fff 0%,
+    rgba(255, 255, 255, 0.7) 50.5%,
+    #fff 100%
+  );
+  --input-bg: linear-gradient(
+    90deg,
+    rgba(0, 221, 223, 0.03) 0%,
+    rgba(0, 165, 167, 0.03) 100%
+  );
+}

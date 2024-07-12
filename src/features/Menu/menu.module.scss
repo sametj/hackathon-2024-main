@@ -1,0 +1,109 @@
+@import "@root/styles/abstracts/mixins";
+.menu-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  flex-direction: center;
+  max-width: 154rem;
+  height: 90dvh;
+  @include respond(tablet) {
+    flex-direction: column;
+  }
+}
+
+.menu-canvas {
+  margin-left: 15rem;
+  flex: 0.99;
+
+  @include respond(tablet) {
+    margin-left: 0;
+    flex: 1.4;
+  }
+
+  &-fix {
+    margin-left: 15rem;
+    flex: 1;
+    @include respond(tablet) {
+      margin-left: 0;
+      flex: 1.39;
+    }
+  }
+}
+
+.menu-content {
+  flex: 3;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  @include respond(tablet) {
+    flex: 2;
+    width: auto;
+  }
+}
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: clamp(30rem, 50vw, 70rem);
+  margin-left: auto;
+}
+.btn {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  margin-top: 10rem;
+
+  color: var(--text);
+  font-size: var(--p-size-hg);
+  transition: all 0.2s;
+  cursor: pointer;
+  &:hover {
+    color: var(--pr2);
+  }
+  @include respond(tablet) {
+    margin-top: 2rem;
+  }
+}
+
+.item-container {
+  width: clamp(30rem, 50vw, 70rem);
+  background: var(--calendar-item-bg);
+  min-height: 11rem;
+  border-radius: 2rem;
+  padding: var(--padding-hg);
+  box-shadow: var(--shadow-card);
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  &:last-child {
+    margin-bottom: 5rem;
+  }
+}
+
+.title {
+  font-size: var(--p-size-md);
+  font-weight: 600;
+}
+.price {
+  font-size: var(--p-size-sm);
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
