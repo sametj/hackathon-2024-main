@@ -137,7 +137,8 @@ Making the website more SEO-friendly improved visibility and search engine ranki
 - Work on the 3D menu interactivity, so that each dish and drink has a 3D model 
 - Make the calendar more interactive so new events are automatically inputted when a form is filled
 - Make the board games page more interactive so new games are automatically inputted when a form is filled
-- Do final touches on pieces of information that the company should have a say 
+- Do final touches on pieces of information that the company should have a say
+- Create Gift Card and Press pages. It currently leads to a 404 Page
 
 For developers it always looks like something is missing or could be worked on more, especially doing a project like this in only 24 hours. So the future plans are things we know it looks amazing but could look even better.
 
